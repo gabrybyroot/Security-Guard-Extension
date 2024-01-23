@@ -1,0 +1,24 @@
+{
+  "name": "Security Guard Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "url_to_16x16_icon.png",
+    "48": "url_to_48x48_icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "warning.html"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
